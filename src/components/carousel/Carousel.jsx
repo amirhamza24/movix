@@ -22,8 +22,17 @@ const Carousel = ({ data, loading }) => {
     const navigate = useNavigate();
 
     const navigation = (dir) => {
+        const container = carouselContainer.current;
 
-    }
+        const scrollAmount = dir === "left" 
+        ? container.scrollLeft - (container.offsetWidth + 20) 
+        : container.scrollLeft + (container.offsetWidth + 20);
+
+        container.scrollTo({
+            left: scrollAmount,
+            behavior: "smooth",
+        });
+    };
 
     const skItem = () => {
         return (
@@ -57,14 +66,14 @@ const Carousel = ({ data, loading }) => {
             />
 
             {!loading ? (
-                <div className="carouselItems">
+                <div className="carouselItems" ref={carouselContainer}>
                     {data?.map((item) => {
                         const posterUrl = item.poster_path ? url.poster + item.poster_path : PosterFallback;
 
                         return (
                             <div
                                 key={item.id}
-                                className="carouselItem">
+                                className="carouselItem" onClick={() => navigate(`/${item.media_type}/${item.id}`)}>
                                 
                                     <div className="posterBlock">
                                         <Img src={posterUrl} />
