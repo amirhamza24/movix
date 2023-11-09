@@ -11,11 +11,10 @@ const Genres = ({ data }) => {
     <div className="genres">
         {data?.map((g) => {
             if (!genres[g]?.name) return;
+            
             return (
-                <div
-                    key={g}
-                    className="genre">
-                        {genres[g]?.name}
+                <div key={g} className="genre">
+                    {genres[g]?.name}
                 </div>
             );
         })}
@@ -23,4 +22,4 @@ const Genres = ({ data }) => {
   )
 }
 
-export default Genres
+export default Genres;
