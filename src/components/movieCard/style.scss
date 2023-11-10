@@ -10,6 +10,7 @@
     @include lg {
         width: calc(20% - 16px);
     }
+    
     .posterBlock {
         position: relative;
         width: 100%;
@@ -22,6 +23,7 @@
         justify-content: space-between;
         padding: 10px;
         transition: all ease 0.5s;
+        
         .lazy-load-image-background {
             position: absolute;
             top: 0;
@@ -37,6 +39,7 @@
                 object-position: center;
             }
         }
+        
         .circleRating {
             width: 40px;
             height: 40px;
@@ -49,6 +52,7 @@
                 height: 50px;
             }
         }
+        
         .genres {
             display: none;
             position: relative;
@@ -59,10 +63,12 @@
             }
         }
     }
+    
     .textBlock {
         color: white;
         display: flex;
         flex-direction: column;
+        
         .title {
             font-size: 16px;
             margin-bottom: 10px;
@@ -72,6 +78,7 @@
                 font-size: 20px;
             }
         }
+        
         .date {
             font-size: 14px;
             opacity: 0.5;
