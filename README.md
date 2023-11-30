@@ -1,6 +1,6 @@
 # React + Vite
 
-- **Live Link:** https://654e092c9802b164a4246ba4--superlative-pie-3fa819.netlify.app/
+- **Live Link:** https://6568e5b7615c5a008aaf5a86--zingy-starship-ce7875.netlify.app/
 #
 
 - ### About this project:
@@ -8,4 +8,4 @@
 
     - All the data of this site has been fetched from **"TMDB API"**.
 
-    - In this project I have used, **JavaScript, React.js, Redux, SCSS, Axios**.  
+    - In this project I have used, **JavaScript, React.js, Redux, SCSS, Axios**.

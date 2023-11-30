@@ -42,6 +42,13 @@ const Footer = () => {
                         <FaLinkedin />
                     </span>
                 </div>
+
+                <div className="h-6"></div>
+
+                <div className="copy-text">
+                    <span className="text-copy">&copy; </span>
+                    <span>Copyright 2023, Amir Hamza. All Rights Reserved</span>
+                </div>
             </ContentWrapper>
         </footer>
     );
